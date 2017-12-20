@@ -5,6 +5,7 @@ Using github as a backup solutions for my dotfiles.
 ## file list
 
 - `.vimrc`
+- `.tmux.conf`
 
 # How to Install
 
