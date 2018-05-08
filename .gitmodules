@@ -22,3 +22,5 @@
 [submodule "vim/bundle/jedi-vim"]
 	path = vim/bundle/jedi-vim
 	url = https://github.com/davidhalter/jedi-vim.git
+[submodule "vim/bundle/vim-markdown-preview"]
+	url = https://github.com/JamshedVesuna/vim-markdown-preview.git
