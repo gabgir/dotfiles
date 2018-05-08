@@ -52,3 +52,8 @@ let g:syntastic_check_on_wq = 0
 let vim_markdown_preview_toggle=1
 " default of 0 doesnt display images
 let vim_markdown_preview_github=1
+
+" for command mode
+nnoremap <S-Tab> <<
+" for insert mode
+inoremap <S-Tab> <C-d>
