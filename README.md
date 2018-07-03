@@ -6,6 +6,7 @@ Using github as a backup solutions for my dotfiles.
 
 - `.vimrc`
 - `.tmux.conf`
+- `.zshrc`
 
 # How to Install
 
@@ -21,4 +22,5 @@ The `--recursive` flag ensures the submodules (vim modules in this case) gets do
 ln -s dotfiles/vimrc ~/.vimrc
 ln -s dotfiles/vim ~/.vim
 ln -s dotfiles/tmux.conf ~/.tmux.conf
+ln -s dotfiles/zshrc ~/.zshrc
 ```
