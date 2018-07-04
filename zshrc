@@ -11,6 +11,10 @@ DEFAULT_USER="$(whoami)"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 # ZSH_THEME="robbyrussell"
+
+# adding powerline
+#. /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
+
 ZSH_THEME="agnoster"
 
 # Set list of themes to load
