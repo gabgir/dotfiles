@@ -57,3 +57,7 @@ let vim_markdown_preview_github=1
 nnoremap <S-Tab> <<
 " for insert mode
 inoremap <S-Tab> <C-d>
+
+" markdown default fold nested
+" (https://github.com/masukomi/vim-markdown-folding)
+autocmd FileType markdown set foldexpr=NestedMarkdownFolds()
