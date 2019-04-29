@@ -1,6 +1,8 @@
 execute pathogen#infect()
 set background=dark
 colorscheme solarized
+set term=xterm-256color-italic
+set termencoding=utf-8
 
 " jedi-vim auto completion"
 autocmd FileType python setlocal completeopt-=preview
@@ -62,3 +64,7 @@ inoremap <S-Tab> <C-d>
 " markdown default fold nested
 " (https://github.com/masukomi/vim-markdown-folding)
 autocmd FileType markdown set foldexpr=NestedMarkdownFolds()
+"change to onehalfdark for markdown files
+autocmd FileType markdown colorscheme OceanicNext
+"set termguicolors fixes color issues
+autocmd FileType markdown set termguicolors
