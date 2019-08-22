@@ -30,3 +30,9 @@
 [submodule "vim/bundle/supertab"]
 	path = vim/bundle/supertab
 	url = https://github.com/ervandew/supertab.git
+[submodule "vim/bundle/oceanic-next"]
+	url = https://github.com/mhartington/oceanic-next
+[submodule "vim/bundle/vim-markdown-folding"]
+	url = https://github.com/masukomi/vim-markdown-folding
+[submodule "vim/bundle/vim-one"]
+	url = https://github.com/rakr/vim-one

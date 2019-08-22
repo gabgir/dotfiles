@@ -1,7 +1,7 @@
 execute pathogen#infect()
 set background=dark
 colorscheme solarized
-set term=xterm-256color-italic
+set term=xterm-256color
 set termencoding=utf-8
 
 " jedi-vim auto completion"
