@@ -1,8 +1,10 @@
-execute pathogen#infect()
-set background=dark
-colorscheme solarized
+"execute pathogen#infect()
+"set background=dark
+"colorscheme solarized
+colorscheme onehalfdark
 set term=xterm-256color
 set termencoding=utf-8
+set termguicolors
 
 " jedi-vim auto completion"
 autocmd FileType python setlocal completeopt-=preview
@@ -65,6 +67,6 @@ inoremap <S-Tab> <C-d>
 " (https://github.com/masukomi/vim-markdown-folding)
 autocmd FileType markdown set foldexpr=NestedMarkdownFolds()
 "change to onehalfdark for markdown files
-autocmd FileType markdown colorscheme OceanicNext
+"autocmd FileType markdown colorscheme OceanicNext
 "set termguicolors fixes color issues
-autocmd FileType markdown set termguicolors
+"autocmd FileType markdown set termguicolors
