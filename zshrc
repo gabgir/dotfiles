@@ -72,7 +72,6 @@ plugins=(
   python
   sublime
   brew
-  zsh-syntax-highlighting
   zsh-autosuggestions
 )
 
