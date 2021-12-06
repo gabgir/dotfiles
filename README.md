@@ -33,3 +33,5 @@ To install [Powerline](https://powerline.readthedocs.io/en/master/installation.h
 ```
 pip install powerline-status
 ```
+
+Install `Oh-My-Zsh` following their instructions at [oh-my-zsh install[https://ohmyz.sh/#install].
