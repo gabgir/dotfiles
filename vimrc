@@ -51,12 +51,6 @@ set statusline+=%*
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-" Default key map to show markdown preview:
-" Ctrl + P
-"vim_markdown_preview options
-let vim_markdown_preview_toggle=1
-" default of 0 doesnt display images
-let vim_markdown_preview_github=1
 
 " for command mode
 nnoremap <S-Tab> <<
