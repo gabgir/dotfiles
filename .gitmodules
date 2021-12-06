@@ -36,3 +36,6 @@
 	url = https://github.com/masukomi/vim-markdown-folding
 [submodule "vim/bundle/vim-one"]
 	url = https://github.com/rakr/vim-one
+[submodule "vim/pack/plugins/start/cypher-vim-syntax"]
+	path = vim/pack/plugins/start/cypher-vim-syntax
+	url = https://github.com/gabgir/cypher-vim-syntax.git
