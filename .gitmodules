@@ -24,9 +24,6 @@
 	url = https://github.com/davidhalter/jedi-vim.git
 [submodule "vim/bundle/vim-markdown-preview"]
 	url = https://github.com/JamshedVesuna/vim-markdown-preview.git
-[submodule "oh-my-zsh"]
-	path = oh-my-zsh
-	url = https://github.com/gabgir/oh-my-zsh.git
 [submodule "vim/bundle/supertab"]
 	path = vim/pack/plugins/start/supertab
 	url = https://github.com/ervandew/supertab.git
