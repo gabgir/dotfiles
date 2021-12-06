@@ -64,3 +64,11 @@ autocmd FileType markdown set foldexpr=NestedMarkdownFolds()
 "autocmd FileType markdown colorscheme OceanicNext
 "set termguicolors fixes color issues
 "autocmd FileType markdown set termguicolors
+
+" highlight matches as we search
+set incsearch
+augroup vimrc-incsearch-highlight
+  autocmd!
+  autocmd CmdlineEnter /,\? :set hlsearch
+  autocmd CmdlineLeave /,\? :set nohlsearch
+augroup END
