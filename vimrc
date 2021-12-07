@@ -72,3 +72,6 @@ augroup vimrc-incsearch-highlight
   autocmd CmdlineEnter /,\? :set hlsearch
   autocmd CmdlineLeave /,\? :set nohlsearch
 augroup END
+
+" add fzf to path
+set rtp+=/usr/local/opt/fzf
