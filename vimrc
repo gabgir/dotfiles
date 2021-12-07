@@ -75,3 +75,8 @@ augroup END
 
 " add fzf to path
 set rtp+=/usr/local/opt/fzf
+
+"mouse support
+set mouse=a
+map <ScrollWheelDown> j
+map <ScrollWheelUp> k
