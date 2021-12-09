@@ -23,6 +23,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'masukomi/vim-markdown-folding'
 Plug 'majutsushi/tagbar'
+Plug 'preservim/nerdcommenter'
 call plug#end()
 
 colorscheme onehalfdark
@@ -109,8 +110,11 @@ let mapleader = '\'
 "change jedi-vim default
 let g:jedi#usages_command = "<leader>u"
 map <leader>n :NERDTreeToggle<CR>
-map <leader>t :TagbarToggle<CR> 
+map <leader>t :TagbarToggle<CR>
 map <leader>o :Files<CR>
+" removed nerd commenter default mapping
+let g:NERDCreateDefaultMappings = 0
+map <leader>/ <plug>NERDCommenterToggle
 " for command mode
 nnoremap <S-Tab> <<
 " for insert mode
