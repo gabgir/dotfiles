@@ -22,6 +22,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'masukomi/vim-markdown-folding'
+Plug 'majutsushi/tagbar'
 call plug#end()
 
 colorscheme onehalfdark
@@ -66,8 +67,6 @@ set foldlevel=99
 set noswapfile
 set nobackup
 
-"NERDTree toggle with leader q
-map <C-n> :NERDTreeToggle<CR>
 
 "Syntastic status line
 set statusline+=%#warningmsg#
@@ -77,12 +76,6 @@ set statusline+=%*
 "let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-
-
-" for command mode
-nnoremap <S-Tab> <<
-" for insert mode
-inoremap <S-Tab> <C-d>
 
 " markdown default fold nested
 " (https://github.com/masukomi/vim-markdown-folding)
@@ -108,3 +101,17 @@ set mouse=a
 map <ScrollWheelDown> j
 map <ScrollWheelUp> k
 
+"change so default sort is by appearance order
+let g:tagbar_sort = 0
+"key mapping
+let mapleader = '\'
+
+"change jedi-vim default
+let g:jedi#usages_command = "<leader>u"
+map <leader>n :NERDTreeToggle<CR>
+map <leader>t :TagbarToggle<CR> 
+map <leader>o :Files<CR>
+" for command mode
+nnoremap <S-Tab> <<
+" for insert mode
+inoremap <S-Tab> <C-d>
