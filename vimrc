@@ -1,6 +1,29 @@
-"execute pathogen#infect()
-"set background=dark
-"colorscheme solarized
+"use vim plug
+let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
+if empty(glob(data_dir . '/autoload/plug.vim'))
+  silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+
+call plug#begin()
+Plug 'sonph/onehalf', {'rtp': 'vim/'}
+Plug 'preservim/nerdtree' |
+            \ Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'davidhalter/jedi-vim'
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+Plug 'gabgir/cypher-vim-syntax'
+Plug 'ervandew/supertab'
+Plug 'vim-syntastic/syntastic'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+Plug 'masukomi/vim-markdown-folding'
+call plug#end()
+
 colorscheme onehalfdark
 set term=xterm-256color
 set termencoding=utf-8
@@ -27,6 +50,10 @@ let g:Powerline_symbols='unicode'
 let g:airline#extensions#tabline#enabled = 1
 set guifont=Source\ Code\ Pro\ for\ Powerline:h12
 let g:airline_skip_empty_sections = 1
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+let g:airline_symbols.colnr = "\u33c7" "fixing missing symbol
 
 set number
 syntax on
@@ -80,3 +107,4 @@ set rtp+=/usr/local/opt/fzf
 set mouse=a
 map <ScrollWheelDown> j
 map <ScrollWheelUp> k
+
