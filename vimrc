@@ -119,3 +119,11 @@ map <leader>/ <plug>NERDCommenterToggle
 nnoremap <S-Tab> <<
 " for insert mode
 inoremap <S-Tab> <C-d>
+
+"change buffer quickly
+nnoremap <Leader>b :buffer<Space>
+
+" delete without yanking
+nnoremap <leader>d "_d
+vnoremap <leader>d "_d
+
