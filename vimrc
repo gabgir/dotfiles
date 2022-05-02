@@ -24,6 +24,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'masukomi/vim-markdown-folding'
 Plug 'majutsushi/tagbar'
 Plug 'preservim/nerdcommenter'
+Plug 'arcticicestudio/nord-vim'
 call plug#end()
 
 colorscheme onehalfdark
@@ -127,3 +128,5 @@ nnoremap <Leader>b :buffer<Space>
 nnoremap <leader>d "_d
 vnoremap <leader>d "_d
 
+
+set rtp+=/usr/local/opt/fzf
