@@ -25,6 +25,7 @@ Plug 'masukomi/vim-markdown-folding'
 Plug 'majutsushi/tagbar'
 Plug 'preservim/nerdcommenter'
 Plug 'arcticicestudio/nord-vim'
+Plug 'tell-k/vim-autopep8'
 call plug#end()
 
 colorscheme onehalfdark
@@ -44,6 +45,14 @@ set tabstop=4
 set shiftwidth=4
 " On pressing tab, insert 4 spaces
 set expandtab
+
+" make new vsplit open on right
+set splitright
+" make new split open on bottom
+set splitbelow
+
+" use relative line numbers
+set relativenumber
 
 set  cursorline
 set clipboard=unnamed
@@ -127,6 +136,3 @@ nnoremap <Leader>b :buffer<Space>
 " delete without yanking
 nnoremap <leader>d "_d
 vnoremap <leader>d "_d
-
-
-set rtp+=/usr/local/opt/fzf
