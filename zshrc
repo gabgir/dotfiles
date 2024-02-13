@@ -118,3 +118,10 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # alias to display preview in fzf as per 
 # https://betterprogramming.pub/boost-your-command-line-productivity-with-fuzzy-finder-985aa162ba5d
 alias fzf="fzf --preview '([[ -f {} ]] && (bat --style=numbers --color=always {} || cat {})) || ([[ -d {} ]] && (tree -C {} | less)) || echo {} 2> /dev/null | head -200'"
+
+
+# work aliases
+# neo4j ATT dev db
+alias attdev="cypher-shell -u neo4j -p cnagraph -a bolt://onxvlvlss02:7687 -d att202103 --format plain"
+
+source ~/.config/op/plugins.sh

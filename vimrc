@@ -28,7 +28,7 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'tell-k/vim-autopep8'
 call plug#end()
 
-colorscheme onehalfdark
+colorscheme nord
 set term=xterm-256color
 set termencoding=utf-8
 set termguicolors
@@ -122,6 +122,7 @@ let g:jedi#usages_command = "<leader>u"
 map <leader>n :NERDTreeToggle<CR>
 map <leader>t :TagbarToggle<CR>
 map <leader>o :Files<CR>
+nnoremap <Leader>w :Windows<CR>
 " removed nerd commenter default mapping
 let g:NERDCreateDefaultMappings = 0
 map <leader>/ <plug>NERDCommenterToggle
@@ -131,7 +132,8 @@ nnoremap <S-Tab> <<
 inoremap <S-Tab> <C-d>
 
 "change buffer quickly
-nnoremap <Leader>b :buffer<Space>
+"nnoremap <Leader>b :buffer<Space>
+nnoremap <Leader>b :Buffers<CR>
 
 " delete without yanking
 nnoremap <leader>d "_d
