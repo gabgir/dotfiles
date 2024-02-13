@@ -28,6 +28,18 @@ ln -s ~/dotfiles/powerline ~/.config/powerline
 
 ## install required modules
 
+### Brewfile
+
+Install brew:
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+Install apps from brewfile:
+```
+brew bundle install --file=~/dotfiles/Brewfile
+```
+
 To install [Powerline](https://powerline.readthedocs.io/en/master/installation.html) for the better status bar in `tmux`:
 ```
 pip install powerline-status
