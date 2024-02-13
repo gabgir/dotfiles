@@ -124,4 +124,4 @@ alias fzf="fzf --preview '([[ -f {} ]] && (bat --style=numbers --color=always {}
 # neo4j ATT dev db
 alias attdev="cypher-shell -u neo4j -p cnagraph -a bolt://onxvlvlss02:7687 -d att202103 --format plain"
 
-source ~/.config/op/plugins.sh
+#source ~/.config/op/plugins.sh

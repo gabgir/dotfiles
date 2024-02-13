@@ -4,6 +4,7 @@ Using github as a backup solutions for my dotfiles.
 
 ## file list
 
+- `Brewfile`
 - `.vimrc`
 - `.tmux.conf`
 - `.zshrc`
@@ -22,8 +23,6 @@ The `--recursive` flag ensures the submodules (vim modules in this case) gets do
 ln -s dotfiles/vimrc ~/.vimrc
 ln -s dotfiles/vim ~/.vim
 ln -s dotfiles/tmux.conf ~/.tmux.conf
-ln -s dotfiles/zshrc ~/.zshrc
-ln -s dotfiles/oh-my-zsh ~/.oh-my-zsh
 ln -s ~/dotfiles/powerline ~/.config/powerline
 ```
 
@@ -34,4 +33,30 @@ To install [Powerline](https://powerline.readthedocs.io/en/master/installation.h
 pip install powerline-status
 ```
 
+### Vim
+
+Run `:PlugInstall` from within vim to install modules.
+
+### Tmux
+
+Install TPM:
+```
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+details: [https://github.com/tmux-plugins/tpm](https://github.com/tmux-plugins/tpm)
+
+Run `prefix` + `I`, meaning `Ctrl` + `b` then `I` to install modules.
+
+### Oh-My-Zsh
+
 Install `Oh-My-Zsh` following their instructions at [oh-my-zsh install[https://ohmyz.sh/#install].
+
+Install `zsh-autosuggestions` with:
+```
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions`
+```
+
+Remove default .zshrc and link to the dotfiles one:
+```
+ln -s dotfiles/zshrc ~/.zshrc
+```
