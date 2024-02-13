@@ -8,6 +8,7 @@ Using github as a backup solutions for my dotfiles.
 - `.vimrc`
 - `.tmux.conf`
 - `.zshrc`
+- `iterm_profile_nord.json`
 
 # How to Install
 
@@ -72,3 +73,7 @@ Remove default .zshrc and link to the dotfiles one:
 ```
 ln -s dotfiles/zshrc ~/.zshrc
 ```
+
+### Iterm2 profile
+
+Within the Iterm2 profile menu, import the json file.
